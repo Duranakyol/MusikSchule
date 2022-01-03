@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekt</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="Projekt.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="logo.jpg">
+            <i class="fas fa-bars" id="hamburger" onclick="bars();"></i>
+        </div>
+        <div class="menu" id="menu">
+            <h2 id="idHome" onclick="home();"><i class="fas fa-home"></i>HOME</h2>
+            <h2 id="iduberUns" onclick="uberUns();"><i class="fas fa-music"></i>ÜBER UNS</h2>
+            <h2 id="idKontakt" onclick="kontakt();"><i class="fas fa-id-card"></i>KONTAKT</h2>
+            <input type="text" placeholder="SEARCH..." id="search">
+            <i class="fas fa-search"></i>
+        </div>
+    </header>
+
+    <div class="container" id="container">
+        <i class="fas fa-chevron-circle-left" id="leftIcon" onclick="prev();"></i>
+        <img id="image" src="music1.jpg" alt="musik">
+        <i class="fas fa-chevron-circle-right" id="rightIcon" onclick="next();"></i>
+        <span id="schreibung">HERZLICH WILLKOMMEN</span>
+        <div id="progress" class="animation"></div>
+    </div>
+    <div id="leistungen">
+        <div id="box">
+            <div>
+                <i class="fas fa-american-sign-language-interpreting"></i>
+            </div>
+            <h1>1. HOHE QUALITÄT</h1>
+            <span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.</span>
+        </div>
+        <div id="box">
+            <div>
+                <i class="fas fa-hand-holding-usd"></i>
+            </div>
+            <h1>2. GUTER PREIS</h1>
+            <span>Eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</span>
+        </div>
+        <div id="box">
+            <div>
+                <i class="fab fa-amazon"></i>
+            </div>
+            <h1>3. ONLINE BERATUNG</h1>
+            <span>At vero eos et accusam et justo duo dolores et ea rebum, Stet clita.</span>
+        </div>
+    </div>
+
+    <div id="unserTeam">
+        <div id="team">
+            <img src="team2.jfif" alt="">
+            <h1>MAX MUSTERMANN</h1>
+            <span>Geschäftsführer</span>
+        </div>
+        <div id="team">
+            <img src="team1.jpeg" alt="">
+            <h1>MARIA MUSTERFRAU</h1>
+            <span>Musik Produzent</span>
+        </div>
+        <div id="team">
+            <img src="team3.jfif" alt="">
+            <h1>MARTIN MÜLLER</h1>
+            <span>Sales Manager</span>
+        </div>
+    </div>
+
+    <div id="divUberUns">
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+        sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et
+        ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+        At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore
+        eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+        euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate
+        velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+    </div>
+
+    <div id="divKontakt">
+        <h2>Sie können uns gerne unter diesem Kontaktformular kontaktieren. Wir werden uns schnellstmöglich bei Ihnen melden.</h2>
+        <div class="info">
+            <div class="informationen">
+                <span><i class="fas fa-building"></i>Volume UP GmbH<br>
+                <i class="fas fa-map-marker-alt"></i>Adresse: Musterstraße 1, 12345 Musterstadt<br>
+                <i class="fas fa-phone-alt"></i>Telefon: 0123 456 78 90<br>
+                <i class="fas fa-at"></i>E-Mail: mail@website.de<br>
+                <i class="far fa-clock"></i>Öffnungszeiten: Mo-Fr. 09:00 bis 18:00 Uhr
+            </span>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2367.9459308948303!2d9.971849615816529!3d53.594426380031805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b188baf6a7208f%3A0xbc1426c010409113!2sM%C3%BCnsterstra%C3%9Fe%202%2C%2022529%20Hamburg!5e0!3m2!1str!2sde!4v1627469509377!5m2!1str!2sde"
+                width="500" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+
+
+        <div class="kontaktFormular">
+            <div class="name">
+                <input type="text" placeholder="Vorname">
+                <input type="text" placeholder="Nachname">
+            </div>
+            <input id="input" type="email" placeholder="E-mail Adresse">
+            <input id="input" type="text" placeholder="Telefonnummer">
+            <textarea name="nachricht" id="nachricht" cols="35" rows="12">Bitte Schreiben Sie Ihre Nachricht...</textarea>
+            <button onclick="schicken();">SCHICKEN</button>
+        </div>
+    </div>
+
+    <footer>
+        <div>
+            <img src="logo.jpg" alt="">
+        </div>
+
+        <div>
+            <span>VOLUME-UP<br></span>
+            <span>Wir machen Musik...</span>
+        </div>
+
+        <div>
+            <h3>Kontakt Informationen :</h3>
+            <i class="fas fa-phone-alt">  Telefon: 0123 456 78 90</i><br>
+            <i class="fas fa-at">  E-Mail: mail@website.de</i><br>
+            <i class="fas fa-map-marker-alt">  Adresse: Musterstraße 1, 12345 Musterstadt</i><br>
+        </div>
+
+        <div>
+            <h3>Nützliche Links :</h3>
+            <i class="fab fa-font-awesome-flag">  https://fontawesome.com/</i><br>
+            <i class="fab fa-youtube">  https://www.youtube.com/</i><br>
+            <i class="fab fa-spotify">  https://www.spotify.com/tr/</i><br>
+        </div>
+    </footer>
+
+    <script src="Projekt.js"></script>
+</body>
+
+</html>

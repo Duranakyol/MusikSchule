@@ -1,0 +1,426 @@
+    * {
+        box-sizing: border-box;
+    }
+    
+    body {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        background-color: #bbb;
+    }
+    
+    header {
+        width: 100%;
+        height: 100px;
+        background-color: #2c2cc9;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+    
+    header>div>img {
+        width: 200px;
+        height: 90px;
+        text-align: center;
+        cursor: pointer;
+        margin-left: 10px;
+        border-radius: 20px;
+        border: 8px solid black;
+        box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.75);
+    }
+    
+    header>div>img:hover {
+        border-radius: 40px;
+        border: 4px solid black;
+        box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.90);
+    }
+    
+    header>div>#hamburger {
+        opacity: 0;
+    }
+    
+    header>.menu {
+        display: flex;
+        position: relative;
+    }
+    
+    header>.menu>h2 {
+        color: white;
+        display: inline-block;
+        margin-right: 20px;
+        cursor: pointer;
+        padding: 10px 10px;
+        box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.75);
+        border-bottom: 1px solid red;
+    }
+    
+    header>.menu>h2>i {
+        margin-right: 8px;
+        color: black;
+    }
+    
+    header>.menu>h2:hover {
+        color: #dbb267;
+    }
+    
+    header>.menu>input {
+        width: 200px !important;
+        height: 40px !important;
+        margin-top: 27px;
+        margin-left: 8px;
+        margin-right: 60px;
+        border-radius: 5px 0 0 5px;
+        border: none;
+        padding-left: 10px;
+    }
+    
+    header>.menu>i {
+        font-size: 2.1em;
+        color: black;
+        margin-top: 30px;
+        margin-right: 10px;
+        margin-left: 10px;
+        position: absolute;
+        right: 11px;
+        top: -3px;
+        padding: 3px;
+        border-radius: 0 4px 4px 0;
+        cursor: pointer;
+        background-color: chartreuse;
+    }
+    
+    header>.menu>i:hover {
+        background-color: chocolate;
+    }
+    
+    @media (max-width:950px) {
+        header>.menu {
+            opacity: 0;
+        }
+        header>.menu>h2 {
+            background-color: red;
+        }
+        header>div>#hamburger {
+            opacity: 100%;
+            font-size: 3em;
+            color: red;
+            position: absolute;
+            top: 30%;
+            right: 10px;
+            z-index: 1;
+        }
+        header>div>#hamburger:hover {
+            cursor: pointer;
+            font-size: 3.2em;
+            color: rgb(138, 17, 17);
+        }
+        header>.menu>i {
+            display: none;
+        }
+        header>.menu>#search {
+            display: none;
+        }
+    }
+    /*HEADER IST FERTIG */
+    
+    .container {
+        width: 1200px;
+        height: 600px;
+        display: flex;
+        margin-top: 20px;
+        margin-left: 100px;
+        position: relative;
+        opacity: 0%;
+        z-index: 1;
+    }
+    
+    .container>img {
+        border-radius: 100px;
+        box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.75);
+        opacity: 0.8;
+    }
+    
+    .container>i {
+        font-size: 3em;
+        color: red;
+        position: absolute;
+        cursor: pointer;
+    }
+    
+    .container>i:hover {
+        font-size: 3.4em;
+    }
+    
+    .container #leftIcon {
+        top: 50%;
+        left: 40px;
+        z-index: 1;
+    }
+    
+    .container #rightIcon {
+        top: 50%;
+        right: 40px;
+    }
+    
+    .container span {
+        font-size: 3em;
+        color: red;
+        position: absolute;
+        top: 50%;
+        left: 340px;
+        cursor: pointer;
+    }
+    
+    .container span:hover {
+        color: #411f1f;
+    }
+    
+    #progress {
+        width: 0%;
+        height: 10px;
+        background-color: rgb(255, 255, 255, 0.6);
+        position: absolute;
+        left: 50px;
+        bottom: -10px;
+        border-radius: 100px;
+    }
+    
+    .animation {
+        animation-name: breite;
+        animation-duration: 5s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+    
+    @keyframes breite {
+        0% {
+            width: 0;
+        }
+        100% {
+            width: 100%;
+        }
+    }
+    /* CONTAINER IST FERTIG */
+    
+    #leistungen {
+        width: 1200px;
+        margin-top: 30px;
+        margin-left: 150px;
+        position: relative;
+        opacity: 0;
+        display: flex;
+    }
+    
+    #leistungen>#box {
+        width: 400px;
+        margin-left: 20px;
+        text-align: center;
+        padding: 17px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.75);
+        background-color: #eee;
+    }
+    
+    #leistungen>#box>div {
+        width: 100px;
+        height: 100px;
+        background-color: goldenrod;
+        border-radius: 50px;
+        margin: 0 auto;
+    }
+    
+    #leistungen>#box>div>i {
+        color: blue;
+        font-size: 4em;
+        cursor: pointer;
+        margin-top: 13px;
+    }
+    
+    #leistungen>#box>h1 {
+        color: red;
+        border-bottom: 1px solid red;
+    }
+    
+    #leistungen>#box>span {
+        font-size: 2.3em;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #unserTeam {
+        width: 1200px;
+        margin: 50px 0 30px 150px;
+        position: relative;
+        display: flex;
+        opacity: 0;
+    }
+    
+    #unserTeam>#team {
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+        text-align: center;
+        padding: 5px;
+    }
+    
+    #unserTeam>#team>img {
+        width: 200px;
+        height: 200px;
+        border-radius: 100px;
+        margin: 0 auto;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+    
+    #unserTeam>#team>h1 {
+        color: blueviolet;
+    }
+    
+    #unserTeam>#team>span {
+        font-size: 2.3em;
+        text-align: center;
+    }
+    /* HOME ABTEILUNG IST FERTIG */
+    
+    #divUberUns {
+        font-size: 1.9em;
+        opacity: 0;
+        position: absolute;
+        top: 200px;
+        left: 10px;
+    }
+    /* UBER UNS ABTEILUNG IST FERTIG */
+    
+    #divKontakt {
+        font-size: 2em;
+        position: absolute;
+        top: 100px;
+        left: 50px;
+        opacity: 0;
+    }
+    
+    #divKontakt>h2 {
+        width: 1400px;
+        text-align: center;
+        background-color: #ddd;
+        box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.75);
+    }
+    
+    #divKontakt>.info {
+        width: 1400px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    #divKontakt>.info>.informationen {
+        width: 500px;
+        padding: 20px;
+        box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.75);
+        margin: 20px;
+        background-color: #ddd;
+    }
+    
+    #divKontakt>.info>.informationen>span>i {
+        color: red;
+        margin: 10px;
+    }
+    
+    #divKontakt>.info>iframe {
+        margin: 20px;
+        box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.75);
+    }
+    
+    #divKontakt>.kontaktFormular {
+        width: 800px;
+        margin: 20px auto;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #2c2cc9;
+        border-radius: 30px;
+        box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.75);
+    }
+    
+    #divKontakt>.kontaktFormular>input {
+        margin: 10px;
+        padding: 18px 70px;
+        outline: none;
+        border: none;
+        border-radius: 10px;
+        font-size: 0.5em;
+        z-index: 1;
+        background-color: #ddd;
+    }
+    
+    #divKontakt>.kontaktFormular>.name>input {
+        margin: 10px;
+        padding: 18px 70px;
+        outline: none;
+        border: none;
+        border-radius: 10px;
+        font-size: 0.5em;
+        background-color: #ddd;
+    }
+    
+    #divKontakt>.kontaktFormular>textarea {
+        font-size: 0.6em;
+        background-color: #ddd;
+    }
+    
+    #divKontakt>.kontaktFormular>button {
+        font-size: 0.8em;
+        padding: 5px 100px;
+        margin: 10px;
+        text-align: center;
+        background-color: chocolate;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        color: white;
+    }
+    
+    #divKontakt>.kontaktFormular>button:hover {
+        background-color: rgb(255, 106, 0);
+    }
+    
+    footer {
+        width: 100%;
+        height: 100px;
+        display: flex;
+        background-color: #2c2cc9;
+        margin-bottom: 0 !important;
+    }
+    
+    footer>div>img {
+        width: 120px;
+        height: 90px;
+        margin: 5px 20px;
+        border-radius: 40px 20px 40px 20px;
+    }
+    
+    footer>div>span {
+        display: flex;
+        flex-direction: column;
+        font-size: 1.8em;
+        margin: 13px 35px;
+        color: red;
+    }
+    
+    footer>div>h3 {
+        margin: 0;
+        margin-top: 1px;
+        margin-bottom: 8px;
+        color: chocolate;
+        margin-left: 160px;
+        border-bottom: 1px solid red;
+    }
+    
+    footer>div>i {
+        color: white;
+        margin-left: 160px;
+        margin-top: 4px;
+    }
